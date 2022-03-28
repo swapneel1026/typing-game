@@ -4,7 +4,7 @@ let autoPara = document.querySelector(".auto-para");
 let paragraph = document.querySelector("#paragraph");
 let textArea = document.querySelector("#textarea");
 
-const quoteRandom = "http://quotes.stormconsultancy.co.uk/random.json";
+const quoteRandom = "https://api.quotable.io/random";
 
 function getRandomQuote() {
   return fetch(quoteRandom).then((response) =>
