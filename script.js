@@ -8,7 +8,7 @@ const quoteRandom = "https://api.quotable.io/random";
 
 function getRandomQuote() {
   return fetch(quoteRandom).then((response) =>
-    response.json().then((data) => data.quote)
+    response.json().then((data) => data.content)
   );
 }
 
