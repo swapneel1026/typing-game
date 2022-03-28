@@ -4,11 +4,11 @@ let autoPara = document.querySelector(".auto-para");
 let paragraph = document.querySelector("#paragraph");
 let textArea = document.querySelector("#textarea");
 
-const quoteRandom = "https://api.quotable.io/random";
+const quoteRandom = "http://quotes.stormconsultancy.co.uk/random.json";
 
 function getRandomQuote() {
   return fetch(quoteRandom).then((response) =>
-    response.json().then((data) => data.content)
+    response.json().then((data) => data.quote)
   );
 }
 
